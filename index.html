@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DOOM via Console.log()</title>
+    <meta name="description" content="WebAssembly meets console.Log.">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>
+            DOOM via Console.log()
+    </h1>
+    <h2>
+        By <a href="https://twitter.com/cozendeymath">@CozendeyMath</a>
+        At <a href="https://github.com/MattCozendey/doom-console-log">My repo</a>        
+    </h2>
+
+    <h3>
+        Credits: DOOM via
+            <a href="https://github.com/diekmann/wasm-fizzbuzz">
+                WebAssembly from Scratch Article.
+            </a>
+    </h3>
+    <h3>
+        FORK via 
+        <a href="https://github.com/healeycodes/doom-checkboxes">
+            doom-checkboxes
+        </a>
+        by
+        <a href="https://twitter.com/healeycodes">
+            @healeycodes
+        </a>
+    </h3>
+    </header>
+    
+    <div>
+        <div class="container">
+            <canvas id="screen" width="640" height="400" tabindex="0">This is where the DooM screen should render.</canvas>
+            <div id="output"></div>
+        </div>
+        <div class="stats-container">
+            <h4 class="header">
+                Stats:
+            </h4>
+            <h5>
+                Milliseconds calls per second: <span id="getmsps_stats">0</span>
+            </h5>
+            <h5>
+                Total getmilliseconds calls: <span id="getms_stats">0</span>
+            </h5>
+            <h5>
+                DOOM FPS: <span id="fps_stats">0</span> (target: 35FPS)
+            </h5>
+            <h5>
+                Total Frames drawn: <span id="drawframes_stats">0</span>
+            </h5>
+            <h5>
+                Browser Animation FPS: <span id="animationfps_stats">0</span> (target: around 60FPS, depending on browser)
+            </h5>
+        </div>
+        
+    </div>
+    <ul class="key-guide-container">
+        <li class="header">
+            Use:
+        </li>
+        <li>
+            <button id="enterButton">&#x23CE;</button> to start the game
+        </li>
+
+        <li>
+            <button id="leftButton">&#x2190;</button>
+            <button id="upButton">&#x2191;</button>
+            <button id="downButton">&#x2193;</button>
+            <button id="rightButton">&#x2192;</button> to move
+        </li>
+
+        <li>
+            <button id="ctrlButton">ctrl</button> to shoot
+        </li>
+
+        <li>
+            <button id="spaceButton">&nbsp;&nbsp;&nbsp;&nbsp;</button> to open gates
+        </li>
+        <li>
+            <button id="altButton">alt</button> and arrow keys to strafe (if your browser does not handle these keys otherwise).
+        </li>
+    </ul>
+    </div>
+
+    <div class="warning-container">
+        <b>Press F12 or Inspect Element and go to the console tab to get started.</b>
+        <p id="focushint"></p>
+    </div>
+    
+
+</body>
+<script src="doom.js" defer></script>
+</html>
