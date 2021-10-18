@@ -1,4 +1,4 @@
-## :joystick: DOOM via browser Console.Log()!
+## :joystick: Classic DOOM on console!
 
 [Play it now](https://classic-dom.herokuapp.com/).
 
@@ -25,10 +25,6 @@ document.body.addEventListener("keydown", (e) => forwardKey(e, "keydown"));
 document.body.addEventListener("keyup", (e) => forwardKey(e, "keyup"));
 ```
 
-## Development
-
 ```bash
 python App.py
 ```
-
-Edit files, refresh.

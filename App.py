@@ -1,5 +1,4 @@
 import http.server
-
 PORT = 3001
 
 HandlerClass = http.server.SimpleHTTPRequestHandler
