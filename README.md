@@ -1,6 +1,6 @@
 ## :joystick: Classic DOOM on console!
 
-[Play it now](https://classic-dom.herokuapp.com/).
+[Play it now](https://carlos18mz.github.io/classic-doom/).
 
 <br>
 
